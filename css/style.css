@@ -2252,3 +2252,82 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   from { transform: scaleY(0.4); opacity: 0.5; }
   to   { transform: scaleY(1);   opacity: 1; }
 }
+/* ===============================
+   MOBILE RESPONSIVE FIX
+   =============================== */
+
+body{
+overflow-x:hidden;
+}
+
+img{
+max-width:100%;
+height:auto;
+display:block;
+}
+
+/* Services Responsive Grid */
+.services-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+/* Gallery Responsive Grid */
+.gallery-masonry{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+}
+
+/* MOBILE DESIGN */
+@media (max-width:768px){
+
+.hero{
+height:75vh;
+padding:0 20px;
+}
+
+.hero-title{
+font-size:32px;
+line-height:1.2;
+}
+
+.hero-subtitle{
+font-size:14px;
+}
+
+.hero-buttons{
+flex-direction:column;
+gap:10px;
+}
+
+.navbar-links{
+display:none;
+}
+
+.hamburger{
+display:block;
+}
+
+.section{
+padding:60px 20px;
+}
+
+.section-title{
+font-size:28px;
+}
+
+.section-subtitle{
+font-size:15px;
+}
+
+.services-grid{
+grid-template-columns:1fr;
+}
+
+.gallery-masonry{
+grid-template-columns:1fr;
+}
+
+}
