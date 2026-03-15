@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="About Glamour Beauty Parlour – Suratgarh's premier luxury beauty salon. Our story, philosophy and expert team."/>
+  <title>About Us | Glamour Beauty Parlour – Suratgarh</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <style>
+    #glamour-preloader{position:fixed;top:0;left:0;width:100%;height:100%;background:#000;display:flex;align-items:center;justify-content:center;z-index:99999;transition:opacity 0.8s ease,visibility 0.8s ease;}
+    #glamour-preloader.fade-out{opacity:0;visibility:hidden;}
+    .preloader-inner{text-align:center;}
+    .preloader-title{font-family:'Cormorant Garamond','Georgia',serif;font-size:clamp(3rem,8vw,6rem);font-weight:300;letter-spacing:0.3em;color:#c9a96e;text-transform:uppercase;animation:preloader-glow 1.5s ease-in-out infinite alternate;}
+    .preloader-sub{font-family:'Montserrat','Arial',sans-serif;font-size:0.55rem;letter-spacing:6px;text-transform:uppercase;color:rgba(201,169,110,0.5);margin-top:12px;}
+    .preloader-bar{width:120px;height:1px;background:rgba(201,169,110,0.2);margin:20px auto 0;position:relative;overflow:hidden;}
+    .preloader-bar-fill{position:absolute;top:0;left:-100%;width:100%;height:100%;background:#c9a96e;animation:preloader-slide 1.8s ease-in-out forwards;}
+    @keyframes preloader-glow{from{opacity:0.7;}to{opacity:1;text-shadow:0 0 30px rgba(201,169,110,0.4);}}
+    @keyframes preloader-slide{0%{left:-100%;}100%{left:0%;}}
+  </style>
+</head>
+<body>
+
+<div id="glamour-preloader">
+  <div class="preloader-inner">
+    <div class="preloader-title">Glamour</div>
+    <div class="preloader-sub">Beauty Parlour · Suratgarh</div>
+    <div class="preloader-bar"><div class="preloader-bar-fill"></div></div>
+  </div>
+</div>
+
+<!-- NAVBAR -->
+<nav class="navbar scrolled" id="navbar">
+  <a href="index.html" class="navbar-logo">
+    <img src="images/logo.png" alt="Glamour Beauty Parlour" class="navbar-logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"/>
+    <span class="navbar-logo-fallback" style="display:flex;flex-direction:column;">
+      <span class="script">Glamour</span>
+      <span class="sub">Beauty Parlour · Suratgarh</span>
+    </span>
+  </a>
+  <ul class="navbar-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html" class="active">About</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li>
+      <a href="https://www.instagram.com/glamour_beauty_hub2019" target="_blank" class="insta-icon" aria-label="Instagram">
+        <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069z"/></svg>
+      </a>
+    </li>
+  </ul>
+  <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+</nav>
+<nav class="mobile-nav" id="mobileNav">
+  <button class="mobile-close" style="position:absolute;top:28px;right:28px;color:var(--gold);font-size:1.4rem;background:none;border:none;cursor:pointer;">✕</button>
+  <a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a>
+  <a href="gallery.html">Gallery</a><a href="contact.html">Contact</a>
+</nav>
+<div class="nav-overlay" id="navOverlay"></div>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <img src="images/gallery/makeup/1.png" alt="About Glamour"/>
+  <div class="page-hero-content">
+    <p class="eyebrow">Our Story</p>
+    <h1>About <em>Glamour</em></h1>
+    <div class="breadcrumb">
+      <a href="index.html">Home</a>
+      <span>›</span>
+      <span style="color:rgba(255,255,255,0.7)">About</span>
+    </div>
+  </div>
+</section>
+
+<!-- OUR STORY -->
+<section class="section section-cream">
+  <div class="about-story">
+    <div class="reveal">
+      <p style="font-size:0.65rem;letter-spacing:5px;text-transform:uppercase;color:var(--gold);margin-bottom:16px;">Est. 2019</p>
+      <h2 style="font-family:var(--ff-display);font-size:clamp(2.2rem,4vw,3.6rem);font-weight:400;line-height:1.15;margin-bottom:24px;">
+        Born From a Passion<br/><em style="font-style:italic;color:var(--gold-dark);">For Beauty & Care</em>
+      </h2>
+      <p style="font-size:0.88rem;color:var(--text-muted);line-height:1.9;margin-bottom:16px;">
+        Glamour Beauty Parlour was founded in 2019 with a singular dream: to bring luxury beauty experiences to the women of Suratgarh. Located in the heart of Swami Vivekananda Nagar, we have quickly become the city's most trusted destination for premium beauty services.
+      </p>
+      <p style="font-size:0.88rem;color:var(--text-muted);line-height:1.9;margin-bottom:16px;">
+        Our journey began with a commitment to excellence — using only the finest products, hiring the most skilled artists, and creating an environment where every client feels like royalty. Today, with a perfect 5-star rating and hundreds of happy clients, we continue to set the standard for beauty in Suratgarh.
+      </p>
+      <p style="font-size:0.88rem;color:var(--text-muted);line-height:1.9;">
+        Whether you're preparing for your wedding day, a special occasion, or simply treating yourself — Glamour Beauty Parlour is your sanctuary of style and self-care.
+      </p>
+    </div>
+    <div class="reveal reveal-delay-1" style="position:relative;">
+      <img src="images/gallery/bridal/1.png" alt="Salon" style="width:100%;object-fit:cover;height:500px;"/>
+      <div style="position:absolute;bottom:-20px;right:-20px;background:var(--gold);padding:24px;max-width:200px;box-shadow:var(--shadow-gold);">
+        <div style="font-family:var(--ff-display);font-size:3rem;font-weight:300;color:var(--black);line-height:1;">5.0</div>
+        <div style="font-size:0.6rem;letter-spacing:2px;text-transform:uppercase;color:var(--black-soft);">Google Rating</div>
+        <div style="color:var(--black-soft);font-size:1rem;margin-top:6px;">★★★★★</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PHILOSOPHY -->
+<section class="section section-dark">
+  <div class="section-header reveal">
+    <span class="section-eyebrow">Our Philosophy</span>
+    <h2 class="section-title">Beauty Is an <em>Art Form</em></h2>
+    <div class="section-divider"></div>
+  </div>
+  <div class="philosophy-cards">
+    <div class="philosophy-card reveal">
+      <div class="philosophy-icon">💎</div>
+      <h3>Premium Quality</h3>
+      <p>We use only the finest, internationally acclaimed beauty products. Quality is never compromised — every product is carefully selected for safety and effectiveness.</p>
+    </div>
+    <div class="philosophy-card reveal reveal-delay-1">
+      <div class="philosophy-icon">✨</div>
+      <h3>Personalized Care</h3>
+      <p>Every client is unique. We take time to understand your individual needs, skin type, and style preferences to deliver a truly personalized beauty experience.</p>
+    </div>
+    <div class="philosophy-card reveal reveal-delay-2">
+      <div class="philosophy-icon">🌸</div>
+      <h3>Warm Hospitality</h3>
+      <p>From the moment you walk in, you are treated with warmth and respect. Our parlour is designed to be your personal oasis of calm and beauty.</p>
+    </div>
+    <div class="philosophy-card reveal">
+      <div class="philosophy-icon">🎓</div>
+      <h3>Expert Artists</h3>
+      <p>Our team of beauty professionals undergoes continuous training to stay current with the latest trends, techniques, and innovations in the beauty industry.</p>
+    </div>
+    <div class="philosophy-card reveal reveal-delay-1">
+      <div class="philosophy-icon">⏰</div>
+      <h3>Respect Your Time</h3>
+      <p>We value your schedule. Appointments are honoured promptly, and our efficient team ensures you get the best results without unnecessary waiting.</p>
+    </div>
+    <div class="philosophy-card reveal reveal-delay-2">
+      <div class="philosophy-icon">🌿</div>
+      <h3>Skin Safety</h3>
+      <p>Your skin's health is our priority. We use dermatologically tested, safe products and always perform patch tests before treatments when required.</p>
+    </div>
+  </div>
+</section>
+
+<!-- WHY CHOOSE US -->
+<section class="section section-cream-dark">
+  <div class="section-header reveal">
+    <span class="section-eyebrow">Why Choose Us</span>
+    <h2 class="section-title">The <em>Glamour</em> Difference</h2>
+    <div class="section-divider"></div>
+  </div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;max-width:1200px;margin:0 auto;" class="about-story">
+    <div class="reveal">
+      <img src="images/gallery/bridal/2.png" alt="Why Choose Us" style="width:100%;height:500px;object-fit:cover;"/>
+    </div>
+    <div class="reveal reveal-delay-1">
+      <div style="display:flex;flex-direction:column;gap:28px;">
+        <div style="display:flex;gap:20px;align-items:flex-start;">
+          <div style="width:48px;height:48px;background:var(--gold);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:1.2rem;">✦</div>
+          <div>
+            <h3 style="font-family:var(--ff-display);font-size:1.3rem;font-weight:400;margin-bottom:6px;">Perfect 5-Star Rating</h3>
+            <p style="font-size:0.82rem;color:var(--text-muted);line-height:1.8;">Consistently rated 5 stars by our clients on Google. Our reputation speaks louder than any advertisement.</p>
+          </div>
+        </div>
+        <div style="display:flex;gap:20px;align-items:flex-start;">
+          <div style="width:48px;height:48px;background:var(--gold);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:1.2rem;">✦</div>
+          <div>
+            <h3 style="font-family:var(--ff-display);font-size:1.3rem;font-weight:400;margin-bottom:6px;">Bridal Makeup Specialists</h3>
+            <p style="font-size:0.82rem;color:var(--text-muted);line-height:1.8;">Hundreds of brides have trusted us for their most important day. Our bridal packages are comprehensive and meticulously designed.</p>
+          </div>
+        </div>
+        <div style="display:flex;gap:20px;align-items:flex-start;">
+          <div style="width:48px;height:48px;background:var(--gold);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:1.2rem;">✦</div>
+          <div>
+            <h3 style="font-family:var(--ff-display);font-size:1.3rem;font-weight:400;margin-bottom:6px;">Premium Products Only</h3>
+            <p style="font-size:0.82rem;color:var(--text-muted);line-height:1.8;">We exclusively use internationally acclaimed beauty brands — because you deserve nothing but the best.</p>
+          </div>
+        </div>
+        <div style="display:flex;gap:20px;align-items:flex-start;">
+          <div style="width:48px;height:48px;background:var(--gold);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:1.2rem;">✦</div>
+          <div>
+            <h3 style="font-family:var(--ff-display);font-size:1.3rem;font-weight:400;margin-bottom:6px;">Hygienic & Safe Environment</h3>
+            <p style="font-size:0.82rem;color:var(--text-muted);line-height:1.8;">Strict hygiene protocols are followed at every step. All tools are sanitized, and we maintain impeccable cleanliness throughout.</p>
+          </div>
+        </div>
+      </div>
+      <div style="margin-top:36px;">
+        <a href="contact.html" class="btn-dark"><span>Book Your Appointment</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS STRIP -->
+<div style="background:var(--gold);padding:60px;" class="reveal">
+  <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:40px;max-width:1000px;margin:0 auto;text-align:center;">
+    <div>
+      <div style="font-family:var(--ff-display);font-size:3.5rem;font-weight:300;color:var(--black);line-height:1;" class="count-up" data-target="500" data-suffix="+">500+</div>
+      <div style="font-size:0.62rem;letter-spacing:3px;text-transform:uppercase;color:var(--black-soft);margin-top:8px;">Happy Clients</div>
+    </div>
+    <div>
+      <div style="font-family:var(--ff-display);font-size:3.5rem;font-weight:300;color:var(--black);line-height:1;" class="count-up" data-target="5" data-suffix="+">5+</div>
+      <div style="font-size:0.62rem;letter-spacing:3px;text-transform:uppercase;color:var(--black-soft);margin-top:8px;">Years Experience</div>
+    </div>
+    <div>
+      <div style="font-family:var(--ff-display);font-size:3.5rem;font-weight:300;color:var(--black);line-height:1;" class="count-up" data-target="50" data-suffix="+">50+</div>
+      <div style="font-size:0.62rem;letter-spacing:3px;text-transform:uppercase;color:var(--black-soft);margin-top:8px;">Services Offered</div>
+    </div>
+    <div>
+      <div style="font-family:var(--ff-display);font-size:3.5rem;font-weight:300;color:var(--black);line-height:1;">5.0</div>
+      <div style="font-size:0.62rem;letter-spacing:3px;text-transform:uppercase;color:var(--black-soft);margin-top:8px;">Star Rating</div>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="script">Glamour</div>
+      <p>Suratgarh's premier luxury beauty parlour. Delivering elegance, care, and expertise since 2019.</p>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/glamour_beauty_hub2019" target="_blank" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069z"/></svg></a>
+      </div>
+    </div>
+    <div class="footer-col"><h4>Quick Links</h4><ul><li><a href="index.html">→ Home</a></li><li><a href="about.html">→ About</a></li><li><a href="services.html">→ Services</a></li><li><a href="gallery.html">→ Gallery</a></li><li><a href="contact.html">→ Contact</a></li></ul></div>
+    <div class="footer-col"><h4>Services</h4><ul><li><a href="services/bridal-makeup.html">→ Bridal Makeup</a></li><li><a href="services/facial-treatment.html">→ Facials</a></li><li><a href="services/hair-styling.html">→ Hair Styling</a></li><li><a href="services/hair-coloring.html">→ Hair Coloring</a></li><li><a href="services/skin-care.html">→ Skin Care</a></li><li><a href="services/nail-art.html">→ Nail Art</a></li></ul></div>
+    <div class="footer-col"><h4>Contact</h4>
+      <div class="footer-contact-item"><span class="footer-contact-icon">📍</span><span>Ward No 23, Opp. Neelkanth Hospital, Suratgarh, Rajasthan 335804</span></div>
+      <div class="footer-contact-item"><span class="footer-contact-icon">📞</span><span><a href="tel:+918619413476">+91 86194 13476</a></span></div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 Glamour Beauty Parlour. All Rights Reserved.</p>
+    <div class="footer-bottom-links"><a href="#">Privacy Policy</a><a href="#">Terms</a></div>
+  </div>
+</footer>
+
+<!-- CHATBOT -->
+<div class="chatbot-btn" id="chatbotBtn"><div class="pulse"></div><svg viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/></svg></div>
+<div class="chatbot-window" id="chatbotWindow">
+  <div class="chatbot-header"><div class="chatbot-header-info"><div class="chatbot-avatar">✨</div><div><div class="chatbot-name">Glamour Assistant</div><div class="chatbot-status">Online</div></div></div><span class="chatbot-close" id="chatbotClose">✕</span></div>
+  <div class="chatbot-messages" id="chatMessages"><div class="chat-msg bot">Hi Beauty ✨<br/>How are you today?<br/>Can I help you?</div></div>
+  <div class="chatbot-quick-btns"><button class="quick-btn" data-msg="services">Services</button><button class="quick-btn" data-msg="booking">Booking</button><button class="quick-btn" data-msg="location">Location</button><button class="quick-btn" data-msg="contact">Contact</button></div>
+  <div class="chatbot-input-row"><input class="chatbot-input" type="text" placeholder="Type a message…"/><button class="chatbot-send">➤</button></div>
+</div>
+
+<script src="js/main.js"></script>
+<script>
+  window.addEventListener('load', function () {
+    var preloader = document.getElementById('glamour-preloader');
+    if (preloader) {
+      setTimeout(function () { preloader.classList.add('fade-out'); setTimeout(function () { preloader.style.display = 'none'; }, 800); }, 1800);
+    }
+  });
+</script>
+</body>
+</html>
