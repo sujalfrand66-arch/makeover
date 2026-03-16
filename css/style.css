@@ -2410,3 +2410,15 @@ display:block;
 }
 
 }
+.navbar-logo-img{
+height:85px;
+width:auto;
+}
+
+@media (max-width:768px){
+
+.navbar-logo-img{
+height:60px;
+}
+
+}
